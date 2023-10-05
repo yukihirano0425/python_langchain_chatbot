@@ -7,7 +7,7 @@ source .venv/bin/activate
 pip install -r ./requirements.txt
 
 #### Step2. Make Application Running
-cd path/to/python_langchain_chatbot/flask-backend
+cd path/to/python_langchain_chatbot/app
 python app.py
 
 #### Get Slack API && Open AI API KEY

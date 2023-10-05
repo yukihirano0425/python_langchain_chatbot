@@ -9,12 +9,9 @@ load_dotenv(verbose=True)
 # トークン設定
 app = App(token=os.environ.get("SLACK_BOT_TOKEN"))
 openai.api_key = os.environ.get("OPENAI_API_KEY")
-os.environ.get("OPEN_API_SECRET_KEY")
 
 
-# GPTを使ってレスポンス内容の生成
 def respond_gpt(user, content):
-    # 個性の設定
     personality = """
 あなたはChatbotとして、私の同僚のヨータになりきってもらいます。
 以下の制約条件を厳密に守ってロールプレイを行ってください。
